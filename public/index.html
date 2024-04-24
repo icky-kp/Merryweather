@@ -1,43 +1,153 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <meta charset="utf-8" />
-    <link rel="icon" href="%PUBLIC_URL%/favicon.ico" />
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <meta name="theme-color" content="#000000" />
-    <meta
-      name="description"
-      content="Web site created using create-react-app"
-    />
-    <link rel="apple-touch-icon" href="%PUBLIC_URL%/logo192.png" />
-    <!--
-      manifest.json provides metadata used when your web app is installed on a
-      user's mobile device or desktop. See https://developers.google.com/web/fundamentals/web-app-manifest/
-    -->
-    <link rel="manifest" href="%PUBLIC_URL%/manifest.json" />
-    <!--
-      Notice the use of %PUBLIC_URL% in the tags above.
-      It will be replaced with the URL of the `public` folder during the build.
-      Only files inside the `public` folder can be referenced from the HTML.
-
-      Unlike "/favicon.ico" or "favicon.ico", "%PUBLIC_URL%/favicon.ico" will
-      work correctly both with client-side routing and a non-root public URL.
-      Learn how to configure a non-root public URL by running `npm run build`.
-    -->
-    <title>React App</title>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Merryweather Security</title>
+    <link rel="stylesheet" href="styles.css" />
   </head>
   <body>
-    <noscript>You need to enable JavaScript to run this app.</noscript>
-    <div id="root"></div>
-    <!--
-      This HTML file is a template.
-      If you open it directly in the browser, you will see an empty page.
-
-      You can add webfonts, meta tags, or analytics to this file.
-      The build step will place the bundled scripts into the <body> tag.
-
-      To begin the development, run `npm start` or `yarn start`.
-      To create a production bundle, use `npm run build` or `yarn build`.
-    -->
+    <header>
+      <h1>Merryweather Security</h1>
+      <nav id="navbar">
+        <ul>
+          <li><a href="#home">Home</a></li>
+          <li><a href="#about">About Us</a></li>
+          <li><a href="#hardware">Hardware</a></li>
+          <li><a href="#services">Services</a></li>
+          <li><a href="#contact">Contact Us</a></li>
+          <li><a href="#dummy"></a></li>
+        </ul>
+      </nav>
+      <label class="toggle-switch">
+        <input type="checkbox" id="themeToggle" />
+        <span class="slider"></span>
+      </label>
+    </header>
+    <main>
+      <section id="home">
+        <div class="content">
+          <h2>Welcome to Merryweather Security</h2>
+          <div class="image-container">
+            <div class="overlay">
+              <div class="person" style="top: 30px; left: 100px;" data-name="Ahmed James" data-occupation="Security Specialist"></div>
+              <div class="person" style="top: 30px; left: 220px;" data-name="Jamal James" data-occupation="Operations Manager"></div>
+              <div class="person" style="top: 60px; left: 350px;" data-name="Don Percival" data-occupation="CEO"></div>
+              <div class="person" style="top: 30px; left: 490px;" data-name="Terence Huges" data-occupation="Commander"></div>
+              <div class="person" style="top: 30px; left: 600px;" data-name="Turone Bikusp" data-occupation="Consigliere"></div>
+            </div>
+            <img src="images\DonPercival-GTAV-MerryweatherSecurity.jpg" alt="Merryweather Security" id="security-image" width="700">
+          </div>
+          <p>
+            At Merryweather Security, we pride ourselves on being a premier
+            provider of comprehensive security solutions and specialized
+            military operations worldwide. Led by the visionary Don Percival, we
+            boast a dynamic team of highly trained professionals ready to tackle
+            any challenge, anywhere, anytime.
+          </p>
+        </div>
+      </section>
+      <section id="about">
+        <div class="content">
+          <h2 class="section-title">About Merryweather Security</h2>
+          <p class="section-description">Merryweather Security comprises several divisions:</p>
+          <ul class="about-list">
+            <li>
+              <h3 class="division-title">Security Division</h3>
+              <p class="division-description">Provides on-site and property protection with uniformed guards, often patrolling premises with guard dogs or security vehicles.</p>
+            </li>
+            <li>
+              <h3 class="division-title">Paramilitary Force</h3>
+              <p class="division-description">Highly trained operatives for high-risk operations, with three distinct uniform variants:</p>
+              <ul class="uniform-variants">
+                <li><strong>Blackops 1:</strong> Light gear, caps with logos, shades, polo shirts, camo pants, and boots.</li>
+                <li><strong>Blackops 2:</strong> Heavier equipment, military caps or ski hats, sunglasses, jackets or polo shirts, bulletproof vests, tactical pants, and boots.</li>
+                <li><strong>Blackops 3:</strong> Black operations unit, identical to Blackops 2 but without hats, night vision gear.</li>
+              </ul>
+            </li>
+            <li>
+              <h3 class="division-title">Chemsec Division</h3>
+              <p class="division-description">Similar to the security division but with vests having a red outline and "SECURITY" written on the back, operating around Humane Labs and Research.</p>
+            </li>
+            <li>
+              <h3 class="division-title">Courier Service</h3>
+              <p class="division-description">Transports art, artifacts, and perishables for museums and collectors.</p>
+            </li>
+          </ul>
+          <p class="section-description">Merryweather primarily recruits ex-military personnel, ensuring a well-skilled mercenary force.</p>
+        </div>
+      </section>
+      <section id="hardware">
+        <div class="content">
+          <h2>Hardware</h2>
+          <div class="hardware-carousel">
+            <div class="row">
+              <img src="images\hardware-vehicles\DuneFAV-GTAO-front.jpg" alt="Hardware 1">
+              <img src="images\hardware-vehicles\FreightTrain-GTAV-front.jpg" alt="Hardware 2">
+              <img src="images\hardware-vehicles\Nightshark-GTAO-front.jpg" alt="Hardware 3">
+              <img src="images\hardware-vehicles\RhinoTank-GTAV-front.jpg" alt="Hardware 4">
+              <img src="images\hardware-vehicles\QuarrySurvival-GTAO-AnnihilatorStealth.jpg" alt="Hardware 5">
+            </div>
+            <br>
+      </section>
+      <section id="services">
+        <div class="content">
+          <h2>Our Services</h2>
+          <div class="service">
+            <h3>Ammo Drop</h3>
+            <p>Description: Request an ammo crate to be dropped at your GPS location.</p>
+            <p>Cost: $1000</p>
+            <button class="add-to-cart" data-name="Ammo Drop" data-cost="1000">+</button>
+          </div>
+          <div class="service">
+            <h3>Backup Helicopter</h3>
+            <p>Description: Request a helicopter to provide covering fire.</p>
+            <p>Cost: $5000</p>
+            <button class="add-to-cart" data-name="Backup Helicopter" data-cost="5000">+</button>
+          </div>
+          <div class="service">
+            <h3>Boat Pickup</h3>
+            <p>Description: Request a boat to bring you to land.</p>
+            <p>Cost: $250</p>
+            <button class="add-to-cart" data-name="Boat Pickup" data-cost="250">+</button>
+          </div>
+          <div class="service">
+            <h3>Helicopter Pickup</h3>
+            <p>Description: Request a helicopter to pick you up.</p>
+            <p>Cost: $1000</p>
+            <button class="add-to-cart" data-name="Helicopter Pickup" data-cost="1000">+</button>
+          </div>
+          <div class="service">
+            <h3>Call Mercenaries</h3>
+            <p>Description: Choose an entity to be protected by mercenaries.</p>
+            <p>Cost: $7500</p>
+            <button class="add-to-cart" data-name="Call Mercenaries" data-cost="7500">+</button>
+          </div>
+          <div class="service">
+            <h3>Airstrike</h3>
+            <p>Description: Request an airstrike at a selected position.	</p>
+            <p>Cost: $7500</p>
+            <button class="add-to-cart" data-name="Airstrike" data-cost="8000">+</button>
+          </div>
+          <div id="cart">
+            <h3>Order Services</h3>
+            <ul id="cart-items"></ul>
+            <p>To Pay:  <span id="total"></span></p>
+          </div>
+      </section>
+      <section id="contact">
+        <div class="content">
+          <h2>Contact Us</h2>
+          <p>Email: contact@merryweather.com</p>
+          <p>Phone: +1 234 567 890</p>
+          <p>Address: 123 Merryweather Lane, City, Country</p>
+        </div>
+      </section>
+    </main>
+    <footer>
+      <p>&copy; 2024 Merryweather Security. All rights reserved.</p>
+    </footer>
+    <button id="scrollToTopBtn">Scroll to Top</button>
   </body>
+  <script src="script.js"></script>
 </html>
